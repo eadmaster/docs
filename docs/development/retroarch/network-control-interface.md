@@ -33,6 +33,7 @@ The following commands are supported:
 * RESET
 * SHADER_NEXT
 * SHADER_PREV
+* SET_SHADER <shader path>
 * CHEAT_INDEX_PLUS
 * CHEAT_INDEX_MINUS
 * CHEAT_TOGGLE
@@ -48,3 +49,13 @@ The following commands are supported:
 * DISK_PREV
 * GRAB_MOUSE_TOGGLE
 * MENU_TOGGLE
+* VERSION
+* READ_CORE_RAM <address> <number of bytes>
+* WRITE_CORE_RAM <address> <byte1> <byte2> ...
+* GET_STATUS (returns a string like `GET_STATUS CONTENTLESS|PAUSED|RUNNING <system_id>,<content filename>,crc32=<content hash>`)
+* GET_CONFIG_PARAM <param name>  (only some params are supported currently)
+* SHOW_MSG <msg>  (show a message via the OSD)
+ 
+ 
+
+
